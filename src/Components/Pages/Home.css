@@ -1,0 +1,18 @@
+.heroine{
+    background-image: url('../../assets/hero_classroom_nigeria.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+.heroine:hover{
+    background-size: 110%;
+}
+.doctor{
+    background-image: url('../../assets/doctor.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+.doctor:hover{
+    background-size: 110%;
+}
