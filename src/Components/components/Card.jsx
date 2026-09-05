@@ -2,7 +2,7 @@ const Card = (props) => {
     const Icon = props.icon;
     const Button = props.buttonType
   return (
-            <div className=" justify-between flex flex-col gap-4 p-8 rounded-xl text-left max-w-[30vw] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm min-h-100">
+            <div className=" min-w-100 justify-between flex flex-col gap-4 p-8 rounded-xl text-left max-w-[30vw] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm min-h-100">
                                 <div className="px-1 py-1 rounded-2xl  bg-white dark:bg-zinc-900 h-14 w-14 flex justify-center  items-center  border border-zinc-200 dark:border-zinc-800 ">
                     <Icon></Icon>
                 </div>

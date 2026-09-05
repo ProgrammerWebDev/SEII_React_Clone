@@ -189,14 +189,14 @@ function NumbersSection(){
 
 function ProgramsSection(){
   return(
-    <div className="flex flex-col gap-8 justify-center text-left px-[10vw]" id="programs">
+    <div className="flex flex-col  gap-8 justify-center text-left px-[10vw] w-full" id="programs">
       <h1 className="text-4xl max-w-80 font-bold">Roots Fund — Sponsor a Child</h1>
-      <div className="heroine bg-top sm:bg-left flex flex-col sm:flex-row gap-4 self-center items-center rounded-3xl relative min-h-[80vh] w-full ">
+      <div className="heroine bg-top sm:bg-left flex flex-col sm:flex-row gap-4 self-center items-center rounded-3xl relative min-h-[120vh] sm:min-h-[80vh] w-full ">
         <div className="absolute top-3 left-3 flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-600 text-slate-50 text-xs font-bold tracking-wide">
           <span className="w-2 h-2 rounded-full bg-emerald-300" />
           <span>Accepting Sponsors</span>
         </div>
-        <div className="p-4 bottom-0 sm:right-0 gap-8 absolute h-[45vh] h-[100vh] sm:h-[80vh] flex-col flex border bg-white border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 sm:rounded-r-3xl rounded-b-3xl "> 
+        <div className="p-4 sm:max-w-[40vw] sm:right-0 bottom-0  gap-8 absolute sm:w-[45vw] h-[80vh]  flex-col flex border bg-white border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 sm:rounded-r-3xl sm:rounded-bl-none rounded-b-3xl "> 
           <p className="opacity-50">You are not just funding a child — you are investing in the roots that determine their future. The Roots Fund (Roots Fund) provides holistic support including quality education, daily school nutrition (200 meals/year), primary healthcare (NHIS), and psychosocial well-being for vulnerable children aged 7–10 in underserved Nigerian communities.</p>
           <div className="grid grid-rows-2 grid-cols-2 gap-4">
             <div className="flex flex-col gap-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-4 rounded-lg min-h-20">
@@ -222,12 +222,12 @@ function ProgramsSection(){
       </div>
 
       <h1 className="text-4xl max-w-100 font-bold text-red-500">SEEII Blood Drive — Save Lives. Be a Hero.</h1>
-      <div className="doctor flex flex-col sm:flex-row gap-4 self-center items-center rounded-3xl relative h-[80vh] w-full border-zinc-200 dark:border-zinc-900 ">
+      <div className="doctor bg-top sm:bg-left flex flex-col sm:flex-row self-center items-center rounded-3xl relative min-h-[120vh] sm:min-h-[80vh] w-full border border-zinc-200 dark:border-zinc-900 ">
         <div className="absolute top-3 left-3 flex items-center gap-2 px-3 py-1 rounded-full bg-red-500 text-slate-50 text-xs font-bold tracking-wide">
           <span className="w-2 h-2 rounded-full bg-red-200" />
           <span>July 25, 2026</span>
         </div>
-        <div className="p-4 right-0 gap-8 absolute h-[80vh] max-w-[40vw] flex-col flex border bg-white border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 rounded-r-3xl "> 
+        <div className="p-4 sm:max-w-[40vw] sm:right-0 bottom-0  gap-8 absolute sm:w-[45vw] h-[80vh]  flex-col flex border-b border-x bg-white border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 sm:rounded-r-3xl sm:rounded-bl-none rounded-b-3xl "> 
           <p className="opacity-50">Access to safe blood is a cornerstone of resilient healthcare systems and a critical factor in saving lives. Join the SEEII Blood Drive to mobilize voluntary blood donors, strengthen community participation in public health, and contribute to the availability of safe blood for those in need.</p>
           <div className="grid grid-rows-2 grid-cols-2 gap-4">
             <div className="flex flex-col gap-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-4 rounded-lg min-h-20">
@@ -269,7 +269,7 @@ function ApproachToChange(){
     <div className="flex flex-col gap-8 justify-center my-10 px-[10vw] items-center text-center">
       <h1 className="font-bold text-5xl max-w-120">A Holistic Approach To Change</h1>
       <p className="opacity-75 max-w-120">We address the root causes of systemic injustice through six integrated pillars of intervention.</p>
-      <div className="grid grid-cols-4 gap-8 justify-center items-center w-full">
+      <div className="grid grid-flow-row sm:grid-cols-4 gap-8 justify-center items-center w-full">
         {blocks.map((block, index) => {
           const Icon = block.icon;
           return (
@@ -379,7 +379,7 @@ function GetInvolved() {
       <p className="opacity-75 text-lg">
         Every contribution — big or small — plants a seed for a more just and sustainable world.
       </p>
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-col sm:flex-row gap-8">
         <Card icon={Baby} title=" Sponsor a Child " description="Commit to a child's full year of education, nutrition, healthcare, and psychosocial support via the Roots Fund. You'll receive regular updates on their progress." buttonText="Sponsor A Child" buttonType={SeperateAllButton}>
           <div className="flex flex-row relative w-full"><h1 className="text-orange-500 font-bold text-5xl">#920,000</h1><p className="opacity-75 text-lg bottom-0 absolute right-12 ">/child/year</p> 
           </div>
